@@ -1,5 +1,7 @@
-import annotation.CSVEntity;
-import annotation.CSVField;
+package ru.bolodurin.csvtool;
+
+import ru.bolodurin.csvtool.annotation.CSVEntity;
+import ru.bolodurin.csvtool.annotation.CSVField;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

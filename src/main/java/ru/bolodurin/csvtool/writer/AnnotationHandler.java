@@ -1,7 +1,7 @@
-package writer;
+package ru.bolodurin.csvtool.writer;
 
-import annotation.CSVField;
-import exception.CSVWriterException;
+import ru.bolodurin.csvtool.annotation.CSVField;
+import ru.bolodurin.csvtool.exception.CSVWriterException;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

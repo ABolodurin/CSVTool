@@ -1,4 +1,6 @@
-import writer.CSVWriter;
+package ru.bolodurin.csvtool;
+
+import ru.bolodurin.csvtool.writer.CSVWriter;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package writer;
+package ru.bolodurin.csvtool.writer;
 
-import exception.CSVWriterException;
+import ru.bolodurin.csvtool.exception.CSVWriterException;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -28,11 +28,13 @@ public class CSVWriter<T> {
 
     private File createFile(String path) {
         File file = new File(path);
+
         try {
             if (!file.createNewFile()) throw new CSVWriterException("Can not create file: " + path);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new CSVWriterException("Can not create file: " + path);
         }
+
         return file;
     }
 
